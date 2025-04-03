@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ClientController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -19,8 +20,8 @@ Route::group([
         'uses' => 'AccessTokenController@issueToken',
         'as' => 'token',
         'middleware' => 'throttle',
-    ]);
-    
+    ])->withoutMiddleware(VerifyCsrfToken::class);
+
     Route::get('/authorize', [
         'uses' => 'AuthorizationController@authorize',
         'as' => 'authorizations.authorize',
