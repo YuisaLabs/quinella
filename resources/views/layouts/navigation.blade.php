@@ -13,7 +13,7 @@
         <div class="px-6 pt-4 flex items-center">
             <!-- Brand -->
             <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 dark:text-white"
-                href="route('dashboard.index')" aria-label="Brand">Yuisa Auth</a>
+                href="route('dashboard.index')" aria-label="Brand">Quinella</a>
             <!-- End Brand -->
 
             <div class="hidden lg:block ms-2">

@@ -80,7 +80,7 @@
                                                                     class="block text-sm font-medium mb-2 dark:text-white">Name</label>
                                                                 <input type="text" name="name" id="name"
                                                                     class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-neutral-900 dark:border-neutral-700 dark:placeholder-neutral-500 dark:text-neutral-400"
-                                                                    placeholder="Yuisa App">
+                                                                    placeholder="quinella">
                                                             </div>
                                                             <div>
                                                                 <label for="redirect"
